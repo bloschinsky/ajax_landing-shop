@@ -1,0 +1,120 @@
+
+<div class="row center">
+  <h2>Корзина</h2>
+</div>
+
+<div class="row">
+  <div class="col s12 m7 l9">
+    <div class="center" ng-if="!vm.shoppingCartData.shoppingCart.length">
+      <i class="large material-icons">shopping_cart</i>
+      <h5 class="blue-grey-text text-darken-2" 
+        >Вы еще не добавили ни одного товара</h5>
+        
+    </div>
+    
+    <table class="bordered striped highlight shopping-cart-view">
+
+    <tbody>
+      <tr ng-repeat="item in vm.shoppingCartData.shoppingCart">
+        <td><img class="responsive-img circle" width="100px" ng-src="img/{{item.product.image}}"></td>
+        <td>{{item.product.title}}</td>
+        <td class="light-blue-text">{{item.product.price}} грн.</td>
+        <td><a class="waves-effect btn-flat btn-floating"
+               ng-click="vm.itemCountRemove(item)"><i class="material-icons black-text">remove</i></a>
+            <span>{{item.count}}шт.</span>
+            <a class="waves-effect btn-flat btn-floating"
+               ng-click="vm.itemCountAdd(item)"><i class="material-icons black-text">add</i></a></td>
+        <td> = {{item.product.price * item.count}} грн.</td>
+        <td><a class="btn-floating btn-flat waves-effect waves-light del-button"
+               ng-click="vm.initRemoveFromCart(item)">
+               <i class="material-icons black-text">delete_forever</i>
+            </a>
+        </td>      
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="col s12 m5 l3">
+    <div class="card-panel blue-grey lighten-5">
+      <div class="card-content">
+              <div class="row center">
+                <h5 class="card-title">Итого:</h5>
+              </div>
+              <div class="row">
+                <span class="s8"><b>Всего товаров: </b></span>
+                <span class="s4 right light-blue-text">{{vm.shoppingCartData.cartSize}}</span>
+              </div>
+              <div class="row">
+                <span class="s8"><b>На сумму: </b></span>
+                <span class="s4 right light-blue-text">{{vm.shoppingCartData.fullCost}} грн.</span>
+              </div>
+              <div class="row center">
+                <a class="waves-effect waves-light btn green darken-2"
+                   ng-click="vm.checkout()">Оформить заказ</a>
+              </div>
+            </div>
+    </div>
+  </div>
+  
+</div>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content center">
+      <h5>Удалить из корзины?</h5>
+      <p class="light-blue-text">{{vm.tempItemLink.product.title}}</p>
+    </div>
+    <div class="modal-footer center">
+      <a class="modal-action modal-close waves-effect waves-green btn-flat"
+         ng-click="vm.removeFromCart(vm.tempItemLink)">Да</a>
+      <a class="modal-action modal-close waves-effect waves-red btn-flat">Отмена</a>
+    </div>
+  </div>
+  <!--end modal -->  
+
+  <!-- Modal Structure -->
+  <div id="modal2" class="modal">
+    <div class="modal-content center">
+      <form>
+        <h5>Оформить заказ</h5>
+          <div class="row">
+            <div class="input-field col s12 m6">
+              <input placeholder="" 
+                     id="first_name" 
+                     type="text" 
+                     class="validate">
+              <label for="first_name">Имя</label>
+            </div>
+            <div class="input-field col s12 m6">
+              <input placeholder="" 
+                     id="last_name" 
+                     type="text" 
+                     class="validate">
+              <label for="last_name">Фамилия</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 m6">
+              <input placeholder="" 
+                     id="email" 
+                     type="email"
+                     class="validate">
+              <label for="email">Электронная почта</label>
+            </div>
+            <div class="input-field col s12 m6">
+              <input placeholder="" 
+                     id="phone" 
+                     type="text" 
+                     class="validate">
+              <label for="phone">Телефон</label>
+            </div>
+          </div>
+      </form>
+    </div>
+    <div class="modal-footer center">
+      <a class="modal-action modal-close waves-effect waves-green btn-flat"
+         ng-click="vm.removeFromCart(vm.tempItemLink)">Ок</a>
+      <a class="modal-action modal-close waves-effect waves-red btn-flat">Отмена</a>
+    </div>
+  </div>
+  <!--end modal -->  

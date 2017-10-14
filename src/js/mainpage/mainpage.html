@@ -1,0 +1,115 @@
+  <div id="index-banner" class="parallax-container top-banner valign-wrapper">
+
+    <div class="section no-pad-bot">
+     <div class="row hide-on-large-only top-set-block">
+          <div class="col s8 offset-s2">
+            <img class="responsive-img" src="img/top-set-image.png">
+          </div>
+        </div>
+      
+      <div class="row valign-wrapper">
+        
+        <div class="col m7 hide-on-med-and-down">
+          <div class="top-set-block-large">
+            <img class="responsive-img" src="img/top-set-image.png">
+          </div>
+        </div>
+
+        <div class="col s12 l5">
+          <div class="row center light">
+           <h4 class="header left-align">Новое поколение беспроводных систем безопасности</h4>
+            <p class="header left-align">В комплект Ajax StarterKit входит все необходимое для защиты помещения. Чувствительные датчики контролируют двери и активность внутри, а мощный хаб связывает их с внешним миром.</p>
+            <p class="header left-align">В экосистему Ajax входят датчики нескольких типов, которыми вы по желанию можете дополнить защиту StarterKit.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="img/background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="">
+    <div class="section row">
+
+    <div class="row">
+        <div class="col s12 m4 offset-m4 l4 offset-l4 xl2 offset-xl5 input-fields">
+          <label for="filterSelect">Выбрать:</label>
+    
+          <select id="filterSelect" class="browser-default" ng-model="vm.productFilter.type">
+            <option value="">Все</option>
+            <option value="комплект">Комплекты</option>
+            <option value="датчик">Датчики</option>
+            <option value="аксессуар">Аксессуары</option>
+            <option value="модуль">Модули интеграции</option>
+            <option value="сирена">Сирены</option>
+          </select>
+        
+        </div>
+    </div>
+
+    <div class="row" 
+         ng-if="!vm.products.length">
+      <div class="progress col s8 offset-s2">
+        <div class="indeterminate"></div>
+      </div>
+    </div>
+
+      <div id="products" 
+           ng-if="vm.products.length">
+        <!-- [Start] product card-->
+        <div class="card-wraper" ng-repeat="product in vm.products | filter:vm.productFilter">
+        <div class="col s10 offset-s1 m4 l3 xl2">
+          <div class="card large hoverable product-card">
+            <div class="card-image">
+              <img class="responsive-img" ng-src="img/{{product.image}}">
+            </div>
+            
+            <div class="card-content">
+              <h6 class="card-title">{{product.title}}</h6>
+              <p>{{product.info}}</p>
+              <p class="product-price light-blue-text">{{product.price}} грн.</p>
+            </div>
+            
+            <div class="card-action center-align">
+              <a class="waves-effect waves-light btn green"
+                 onclick="Materialize.toast('Добавлено в корзину', 3000)"
+                 ng-click="vm.addToCart(product)">
+                <i class="material-icons right">add_shopping_cart</i
+                >Купить</a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- [End] product card-->
+      </div>
+
+    </div>
+  </div>
+
+<div class="parallax-container">
+  <div class="container">
+    <div class="section">
+
+      <div class="">
+        <div class="col s12 center light-blue-text text-darken-2">
+          <h5 class="center-align">Хотите получить купон на скидку - <span class="white-text">2%</span>?<br>
+          Подписывайтесь на рассылку</h5>
+          <div class="row">
+            <div class="input-field col s8 offset-s1 m5 offset-m3 light-blue-text text-darken-2">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+            <div class="col s2 m1">
+              <button class="btn btn-large waves-effect waves-light light-blue darken-3" type="submit" name="action">
+          <i class="material-icons">send</i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="parallax"><img src="img/background2.jpg"></div>
+</div>
+

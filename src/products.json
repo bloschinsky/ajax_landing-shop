@@ -1,0 +1,51 @@
+[
+  {
+   "type": "комплект",
+   "title": "Ajax MotionProtect Plus",
+   "info": "Беспроводный датчик обнаружения затопления — белый",
+   "price": 1285,
+   "image": "poo.jpg"
+  },
+  {
+   "type": "комплект",
+   "title": "Ajax MotionProtect Minus",
+   "info": "Беспроводной датчик движения и разбития — белый",
+   "price": 955,
+   "image": "poo.jpg"
+  },
+  {
+   "type": "датчик",
+   "title": "Ajax MotionProtect Ultra",
+   "info": "Беспроводная клавиатура — черная",
+   "price": 3456,
+   "image": "poo.jpg"
+  },
+  {
+   "type": "комплект",
+   "title": "Ajax Smoke Ready",
+   "info": "Беспроводный датчик обнаружения затопления — белый",
+   "price": 1285,
+   "image": "poo.jpg"
+  },
+  {
+   "type": "комплект датчик",
+   "title": "Ajax MotionZZZ Plus",
+   "info": "Беспроводный датчик обнаружения затопления — белый",
+   "price": 1285,
+   "image": "poo.jpg"
+  },
+  {
+   "type": "сирена",
+   "title": "Ajax Ultra Siren",
+   "info": "Беспроводной датчик движения и разбития — белый",
+   "price": 955,
+   "image": "poo.jpg"
+  },
+  {
+   "type": "датчик",
+   "title": "Ajax MotionProtect Ultra",
+   "info": "Беспроводная клавиатура — черная",
+   "price": 3456,
+   "image": "poo.jpg"
+  }
+]

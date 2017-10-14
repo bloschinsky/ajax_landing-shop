@@ -1,0 +1,26 @@
+{
+  "name": "ajax-landing",
+  "version": "1.0.0",
+  "description": "ajax-landing",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp clean && gulp;"
+  },
+  "author": "abloschinsky",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-ui-router": "^1.0.3",
+    "browser-sync": "^2.2.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.1.1",
+    "jquery": "^2.x",
+    "materialize-css": "^0.100.2",
+    "rimraf": "^2.3.1"
+  }
+}
