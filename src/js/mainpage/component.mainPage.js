@@ -29,7 +29,16 @@
 			appData.getProducts().then(products => {this.products = products});
 
     		$(function(){
-                $('.parallax').parallax();
+    			$('.carousel.carousel-slider').carousel({fullWidth: true});
+                //$('.parallax').parallax();
+                $('select').material_select();
+            });
+    	}
+
+    	this.$postLink = function(){
+    		    		$(function(){
+    			$('.carousel.carousel-slider').carousel({fullWidth: true});
+                //$('.parallax').parallax();
                 $('select').material_select();
             });
     	}

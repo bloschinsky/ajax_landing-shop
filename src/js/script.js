@@ -8,6 +8,8 @@ var app = angular.module("baseApp", ['ui.router'])
 
 //= footerblock/component.footerBlock.js
 
+//= maincarousel/component.mainCarousel.js
+
 //= mainpage/component.mainPage.js
 
 //= shoppingcart/component.shoppingCart.js
