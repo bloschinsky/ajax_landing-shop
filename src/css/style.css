@@ -245,6 +245,40 @@ span.cart-info{
 }
 
 /*
+* Advantage customization
+*/
+
+.advantages {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.card-panel {
+  padding: 5px;
+  min-height: 250px;
+}
+
+.advantage-sign-background {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width: 50px;
+  height: 50px;
+  border-radius: 7px;
+  transform: rotate(45deg);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantage-sign-background > i {
+  transform: rotate(-45deg);
+}
+
+.advantage-content {
+  margin: 20px 0px; 
+}
+
+/*
 * DropDown customization
 */
 

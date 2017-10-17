@@ -10,6 +10,8 @@ var app = angular.module("baseApp", ['ui.router'])
 
 //= maincarousel/component.mainCarousel.js
 
+//= advantages/component.advantages.js
+
 //= mainpage/component.mainPage.js
 
 //= shoppingcart/component.shoppingCart.js

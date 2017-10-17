@@ -1,0 +1,19 @@
+<div class="advantages section row">
+  <div class="row">
+    <div class="col s12 m6 l3" ng-repeat="advantage in vm.allAdvantages">  
+      <div class="card-panel small white z-depth-0">
+        <div class="advantage-sign-background light-green darken-1 white-text">
+          <i class="material-icons">{{ advantage.icone }}</i>
+        </div>
+        <div class="advantage-content black-text center-align">
+          <h5 class="advantage-content-head">
+            {{ advantage.header }}
+          </h5>
+          <p class="advantage-content-info">
+            {{ advantage.info }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
