@@ -15,5 +15,10 @@
           component: "shoppingCart"
         })
 
+        .state('products',{
+          url: '/products',
+          component: 'allProducts'
+        })
+
 
 })

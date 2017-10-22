@@ -2,20 +2,26 @@
     templateUrl: 'template/maincarousel.html',
     controllerAs: 'vm',
     controller: function(appData){
-    	this.shoppingCartData = appData.shoppingCartData;
-    	
-        this.$postLink = function(){
-                //$('.carousel.carousel-slider').carousel({fullWidth: true, indicators: true});
-                $('.slider').slick({
-                    autoplay: false,
-                    autoplaySpeed: 2000,
-                    dots: true,
-                    infinite: true,
-                    speed: 500,
-                    fade: true,
-                    cssEase: 'linear'
-                });
-                $('.parallax').parallax();
+    	this.products = appData.products;
+    
+      this.$onInit = function(){
+          appData.getProducts().then(products => {this.products = products});
+              $('.parallax').parallax();
+      }
+    
+      this.$postLink = function(){
+            /* $('.carousel.carousel-slider').slick({
+              dots: true, 
+              infinite: true, 
+              speed: 500, 
+              fade: true, 
+              cssEase: 'linear',
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 2000
+            });
+            */
     	}
     }
 })

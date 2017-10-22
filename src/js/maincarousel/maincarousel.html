@@ -1,6 +1,15 @@
 <div id="index-banner" class="parallax-container top-banner valign-wrapper">
   
-  <div class="slider">
+  <div class="row" 
+       ng-if="!vm.products.length">
+    <div class="progress col s8 offset-s2">
+      <div class="indeterminate"></div>
+    </div>
+  </div>
+  
+  <div class="carousel carousel-slider">
+    
+    <!--  1 -->
     <div class="slider-item">
       
       <div class="section no-pad-bot">
@@ -21,9 +30,9 @@
     
          <div class="col s12 l5">
             <div class="row center light">
-             <h4 class="header left-align">Новое поколение беспроводных систем безопасности</h4>
-              <p class="header left-align">В комплект Ajax StarterKit входит все необходимое для защиты помещения. Чувствительные датчики контролируют двери и активность внутри, а мощный хаб связывает их с внешним миром.</p>
-              <p class="header left-align">В экосистему Ajax входят датчики нескольких типов, которыми вы по желанию можете дополнить защиту StarterKit.</p>
+             <h4 class="header left-align">Беспроводная охранная система AJAX</h4>
+              <p class="header left-align">Утонченность, изящность, сверхнадежность, легкость в установке и управлении – все это соединилось в беспроводной охранной системе нового поколения Ajax. Она создана для защиты вашего офиса, дома, семьи.</p>
+              <p class="header left-align">Ajax – высокоинтеллектуальная система, готовая вам подчиниться с первых секунд работы. Пара кликов на мобильном или веб приложении, чтобы поставить или снять дом с охраны, добавить новые датчики, отрегулировать чувствительность.</p>
             </div>
           </div>
     
@@ -31,10 +40,7 @@
 
       </div>
     </div>
-    
-    <div class="slider-item">
-      <p>LIL</p>
-    </div>
+
   </div>
   <div class="parallax"><img src="img/background1.jpg" alt="Unsplashed background img 1"></div>
 </div>

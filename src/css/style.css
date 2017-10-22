@@ -317,3 +317,24 @@ table.shopping-cart-view  .btn-floating.del-button:hover{
   background-color: #ff5252;
 }
 
+/*
+* [Main products] customization
+*/
+
+.main-products .card-content {
+  top: -30px;
+  position: relative;
+  background-image: url('/img/bg-shadow.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  min-height: 100px;
+}
+
+.main-products .img-shadow {
+
+}
+
+.main-products .buy-button {
+  margin-top: 20px;
+}

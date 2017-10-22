@@ -1,22 +1,25 @@
-.component("mainPage", {
-	templateUrl: 'template/mainpage.html',
+.component("allProducts", {
+	templateUrl: 'template/allproducts.html',
 	controllerAs: 'vm',
-	controller: function(appData){
+	controller: function(appData, $timeout){
 		this.products = appData.products;
 		this.addToCart = appData.addToCart;
-
+	
+        this.productFilter = {type: ""};
+        
 		this.$onInit = function(){
+
+			appData.getProducts().then(products => {this.products = products});
+
     		$(function(){
     			$('.carousel.carousel-slider').carousel({fullWidth: true});
-                //$('.parallax').parallax();
                 $('select').material_select();
             });
     	}
 
     	this.$postLink = function(){
-    		$(function(){
+    		    		$(function(){
     			$('.carousel.carousel-slider').carousel({fullWidth: true});
-                //$('.parallax').parallax();
                 $('select').material_select();
             });
     	}

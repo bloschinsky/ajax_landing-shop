@@ -47,7 +47,9 @@ var path = {
         materialize_js: 'node_modules/materialize-css/dist/js/materialize.min.js',
         jquery: 'node_modules/jquery/dist/jquery.min.js',
         angular: 'node_modules/angular/angular.min.js',
-        angular_router: 'node_modules/angular-ui-router/release/angular-ui-router.min.js'
+        angular_router: 'node_modules/angular-ui-router/release/angular-ui-router.min.js',
+        angular_ui_carousel: 'node_modules/angular-ui-carousel/dist/ui-carousel.min.js',
+        angular_ui_carousel_css: 'node_modules/angular-ui-carousel/dist/ui-carousel.min.css'
     },
     clean: './build'
 };
@@ -85,6 +87,12 @@ gulp.task('dependency:create', function(){
         .pipe(gulp.dest(path.build.js));
 
     gulp.src(path.dependency.angular_router)
+        .pipe(gulp.dest(path.build.js));
+
+    gulp.src(path.dependency.angular_ui_carousel_css)
+        .pipe(gulp.dest(path.build.css));
+
+    gulp.src(path.dependency.angular_ui_carousel)
         .pipe(gulp.dest(path.build.js));
 
 });

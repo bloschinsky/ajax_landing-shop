@@ -4,7 +4,8 @@
    "title": "Ajax MotionProtect Plus",
    "info": "Беспроводный датчик обнаружения затопления — белый",
    "price": 1285,
-   "image": "poo.jpg"
+   "image": "poo.jpg",
+   "on_main": "true"
   },
   {
    "type": "комплект",
@@ -12,19 +13,24 @@
    "info": "Беспроводной датчик движения и разбития — белый",
    "price": 955,
    "image": "poo.jpg",
-   "headBanner": {
-                  "show": "true",
-                  "image": "poo.jpg",
-                  "title": "Новое поколение беспроводных систем безопасности",
-                  "info": "В комплект Ajax StarterKit входит все необходимое для защиты помещения. Чувствительные датчики контролируют двери и активность внутри, а мощный хаб связывает их с внешним миром."
-                  }
+   "slider_show": "true",
+   "slider_image": "slider/slider1.png",
+   "slider_header": "Новое поколение беспроводных систем безопасности",
+   "slider_textLine1": "В комплект Ajax StarterKit входит все необходимое для защиты помещения. Чувствительные датчики контролируют двери и активность внутри, а мощный хаб связывает их с внешним миром.",
+   "slider_textLine2": "В экосистему Ajax входят датчики нескольких типов, которыми вы по желанию можете дополнить защиту StarterKit."
   },
   {
    "type": "датчик",
    "title": "Ajax MotionProtect Ultra",
    "info": "Беспроводная клавиатура — черная",
    "price": 3456,
-   "image": "poo.jpg"
+   "image": "poo.jpg",
+   "slider_show": "true",
+   "slider_image": "slider/slider2.png",
+   "slider_header": "Новое поколение беспроводных датчиков",
+   "slider_textLine1": "В комплект Ajax StarterKit входит все необходимое для защиты помещения. Чувствительные датчики контролируют двери и активность внутри",
+   "slider_textLine2": "",
+   "on_main": "true"
   },
   {
    "type": "комплект",
@@ -38,7 +44,8 @@
    "title": "Ajax MotionZZZ Plus",
    "info": "Беспроводный датчик обнаружения затопления — белый",
    "price": 1285,
-   "image": "poo.jpg"
+   "image": "poo.jpg",
+   "on_main": "true"
   },
   {
    "type": "сирена",
@@ -52,6 +59,7 @@
    "title": "Ajax MotionProtect Ultra",
    "info": "Беспроводная клавиатура — черная",
    "price": 3456,
-   "image": "poo.jpg"
+   "image": "poo.jpg",
+   "on_main": "true"
   }
 ]

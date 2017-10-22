@@ -1,4 +1,4 @@
-var app = angular.module("baseApp", ['ui.router'])
+var app = angular.module("baseApp", ['ui.router', 'ui.carousel'])
 
 //= config.routs.js
 
@@ -11,6 +11,10 @@ var app = angular.module("baseApp", ['ui.router'])
 //= maincarousel/component.mainCarousel.js
 
 //= advantages/component.advantages.js
+
+//= mainprod/component.mainProd.js
+
+//= allproducts/component.allProducts.js
 
 //= mainpage/component.mainPage.js
 

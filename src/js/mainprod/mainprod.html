@@ -1,0 +1,37 @@
+<div class="section main-products">
+  <div class="row">
+    <!-- [Start] product card-->
+    <div class="card-wraper" 
+         ng-repeat="product in vm.products | filter: { on_main: true }">
+      <div class="col s10 offset-s1 m6 l3">
+        <div class="card medium product-card z-depth-0">
+          <div class="card-image">
+            <img class="responsive-img" ng-src="img/{{product.image}}">
+            <div class="img-shadow"></div>
+          </div>
+          
+          <div class="card-content">
+            <h6 class="card-title">{{ product.title }}</h6>
+            <p>{{ product.info }}</p>
+            <p class="product-price light-blue-text">{{ product.price }} грн.</p>
+          </div>
+
+          <div class="card-action center-align">
+            <a class="waves-effect waves-light btn green"
+               onclick="Materialize.toast('Добавлено в корзину', 3000)"
+               ng-click="vm.addToCart(product)">
+              <i class="material-icons right">add_shopping_cart</i
+              >Купить</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- [End] product card-->
+  </div>
+  <div class="row center-align">
+    <a class="waves-effect waves-light btn-large blue darken-2"
+       ui-sref="products">
+      Все продукты
+    </a>
+  </div>
+</div>
